@@ -1,0 +1,57 @@
+<div class="card border-primary mb-3">
+    <div class="card-header">Trabajadores</div>
+    <div class="card-body text-primary">
+        <h5 class="card-title">Relevemaniento</h5>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>fullName</th>
+                    <th>birth</th>
+                    <th>entry</th>
+                    <th>workOccasionDetails</th>
+                    <th>workOccasion</th>
+                    <th>experienceDetails/th>
+                    <th>experience</th>
+                    <th>fatiguedDetails</th>
+                    <th>fatigued </th>
+                    <th>traisningDetail</th>
+                    <th>training </th>
+                    <th>trainingDate</th>
+                    <th>physicsCapDetails</th>
+                    <th>physicsCap</th>
+                    <th>physicalTensionDetails</th>
+                    <th>physicalTension</th>
+                    <th>mentalTensionDetails</th>
+                    <th>mentalTension</th>
+               
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let event of events">
+                    <td>{{ event.worker.fullName }}</td>
+                    <td>{{ event.worker.birth }}</td>
+                    <td>{{ event.worker.entry }}</td>
+                    <td>{{ event.worker.workOccasionDetails }}</td>
+                    <td>{{ event.worker.workOccasion }}</td>
+                    <td>{{ event.worker.experienceDetails }}</td>
+                    <td>{{ event.worker.experience }}</td>
+                    <td>{{ event.worker.fatiguedDetails }}</td>
+                    <td>{{ event.worker.fatigued }}</td>
+                    <td>{{ event.worker.trainingDetails }}</td>
+                    <td>{{ event.worker.training }}</td>
+                    <td>{{ event.worker.trainingDate }}</td>
+                    <td>{{ event.worker.physicsCapDetails }}</td>
+                    <td>{{ event.worker.physicsCap }}</td>
+                    <td>{{ event.worker.mentalCapDetails }}</td>
+                    <td>{{ event.worker.mentalCap }}</td>
+                    <td>{{ event.worker.physicalTensionDetails }}</td>
+                    <td>{{ event.worker.physicalTension }}</td>
+                    <td>{{ event.worker.mentalTensionDetails }}</td>
+                    <td>{{ event.worker.mentalTension }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

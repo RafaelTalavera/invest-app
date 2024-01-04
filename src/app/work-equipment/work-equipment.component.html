@@ -1,0 +1,33 @@
+<div class="card border-primary mb-3">
+    <div class="card-header">Lugar de trabajo</div>
+    <div class="card-body text-primary">
+        <h5 class="card-title">Listado de Eventos</h5>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>name</th>
+                    <th>workEquipmentFailsDetalis</th>
+                    <th>workEquipmentFails</th>
+                    <th>energy</th>
+                    <th>defenseFailedDetails </th>
+                    <th>defenseFailed</th>
+                    <th>correctUseEquimantDetails</th>
+                    <th>correctUseEquimant</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let event of events">
+                    <td>{{ event.workEquipement.name }}</td>
+                    <td>{{ event.workEquipement.workEquipmentFailsDetalis }}</td>
+                    <td>{{ event.workEquipement.workEquipmentFails }}</td>
+                    <td>{{ event.workEquipement.energy }}</td>
+                    <td>{{ event.workEquipement.defenseFailedDetails }}</td>
+                    <td>{{ event.workEquipement.defenseFailed }}</td>
+                    <td>{{ event.workEquipement.correctUseEquimantDetails }}</td>
+                    <td>{{ event.workEquipement.correctUseEquimant }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
