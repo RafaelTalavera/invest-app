@@ -4,16 +4,17 @@
     <div class="card-body text-primary">
         <h5 class="card-title">Relevemaniento</h5>
 
-        <table class="table">
+        <div class="table-responsive">
+            <table class="table table-bordered">
             <thead>
                 <tr>
                     <th>Name</th>
                     <th>Sector</th>
-                    <th>adverseWeatherDetalis</th>
-                    <th>adverseWeather</th>
-                    <th>lightingDetails</th>
+                    <th>adverse Weather Detalis</th>
+                    <th>adverse Weather</th>
+                    <th>lighting Details</th>
                     <th>lighting</th>
-                    <th>inspectionDate</th>
+                    <th>inspection Date</th>
                     <th>inspection</th>
                 </tr>
             </thead>
@@ -21,15 +22,14 @@
                 <tr *ngFor="let event of events">
                     <td>{{ event.workPlace.name }}</td>
                     <td>{{ event.workPlace.sector }}</td>
-                    <td>{{ event.workPlace.adverseWeatherDetalis }}</td>
-                    <td>{{ event.workPlace.adverseWeather }}</td>
-                    <td>{{ event.workPlace.lightingDetails }}</td>
+                    <td>{{ event.workPlace.weather }}</td>
                     <td>{{ event.workPlace.lighting }}</td>
                     <td>{{ event.workPlace.inspectionDate }}</td>
                     <td>{{ event.workPlace.inspection }}</td>
                 </tr>
             </tbody>
         </table>
+    </div>
     </div>
 </div>
 

@@ -1,0 +1,447 @@
+
+<form class="needs-validation" novalidate>
+  
+<h4 class="mb-3">Datos del evento</h4>
+<div class="col-md-7 col-lg-8">
+  <form class="needs-validation" novalidate>
+      <div class="row g-3">
+        
+          <div class="col-sm-6">
+              <label for="sector" class="form-label">Fecha</label>
+              <input type="date" class="form-control" id="sector" placeholder="" value="" required>
+              <div class="invalid-feedback">
+              </div>
+          </div>
+          <div class="col-sm-6">
+            <label for="puesto" class="form-label">Descripción del evento</label>
+            <textarea class="form-control" id="puesto" rows="3" placeholder="Ingresa la Descripción"></textarea>
+        </div>
+       
+          <div class="col-sm-6">
+            <label for="puesto" class="form-label">Gravedad Real</label>
+            <select class="form-select" aria-label="Default select example">
+                <option selected></option>
+                <option value="1">Casi</option>
+                <option value="2">Leve</option>
+                <option value="3">Moderado</option>
+                <option value="4">Incapacitante</option>
+                <option value="5">Fatal</option>
+            </select>
+        </div>
+        <div class="col-sm-6">
+          <label for="puesto" class="form-label">Gravedad Potencial</label>
+          <select class="form-select" aria-label="Default select example">
+              <option selected></option>
+              <option value="1">Leve</option>
+              <option value="2">Moderado</option>
+              <option value="3">Incapacitante</option>
+              <option value="4">Fatal</option>
+          </select>
+      </div>
+      
+      <div class="col-sm-6">
+        <label for="puesto" class="form-label">Tipo de lesión</label>
+        <select class="form-select" aria-label="Default select example">
+            <option selected></option>
+            <option value="1">Contusión</option>
+            <option value="2">Corte</option>
+            <option value="3">Erosión</option>
+            <option value="4">Esguince</option>
+            <option value="5">Fisura</option>
+            <option value="6">Fractura</option>
+            <option value="7">Intoxicación</option>
+            <option value="8">Laceración</option>
+            <option value="9">Perforación</option>
+            <option value="10">Quemaduras</option>
+            <option value="11">Torceduras</option>    
+        </select>
+    </div>
+    <div class="col-sm-6">
+      <label for="puesto" class="form-label">Tipo de accidente</label>
+      <select class="form-select" aria-label="Default select example">
+          <option selected></option>
+          <option value="1">Atrapado por</option>
+          <option value="2">Caída a distinto nivel</option>
+          <option value="3">Caída al mismo nivel</option>
+          <option value="4">Contacto con Calor</option>
+          <option value="5">Contacto con Electricidad</option>
+          <option value="6">Contacto con Químicos</option>
+          <option value="7">Contacto con frío</option>
+          <option value="8">Contacto con elemento cortante</option>
+          <option value="9">Contacto con elemento punzante</option>
+          <option value="10">Exposición a gases</option>
+          <option value="11">Exposición a radiación</option>
+          <option value="12">Golpeado contra</option>
+          <option value="13">Golpeado por</option>
+          <option value="14">Proyección de fluidos</option>
+          <option value="15">Proyección de particulas</option>
+      </select>
+  </div>
+
+  <hr class="my-4">
+  <h4 class="mb-3">Datos del Ambiente de trabajo</h4>
+
+  <div class="col-sm-6">
+    <label for="sector" class="form-label">Nombre</label>
+    <input type="text" class="form-control" id="sector" placeholder="" value="" required>
+    <div class="invalid-feedback">
+      Valid last name is required.
+    </div>
+  </div>
+
+  <div class="col-sm-6">
+    <label for="sector" class="form-label">Sector</label>
+    <input type="text" class="form-control" id="sector" placeholder="" value="" required>
+    <div class="invalid-feedback">
+      Valid last name is required.
+    </div>
+  </div>
+
+  <div class="col-sm-6">
+    <label for="puesto" class="form-label">Variables Climaticas</label>
+    <select class="form-select" aria-label="Default select example">
+        <option selected></option>
+        <option value="1">Alta temperatura</option>
+        <option value="2">Baja temperatura</option>
+        <option value="3">Granizo</option>
+        <option value="4">Humedad</option>
+        <option value="5">Índice UV</option>
+        <option value="6">Neblina</option>
+        <option value="7">Normal</option>
+        <option value="8">Nubosidad</option>
+        <option value="9">Precipitación</option>
+        <option value="10">Presión atmosférica</option>
+        <option value="11">Tormenta</option>
+        <option value="12">Viento</option>
+    </select>
+</div>
+
+<div class="col-sm-6">
+  <label for="puesto" class="form-label">Nivel de iluminación</label>
+  <select class="form-select" aria-label="Default select example">
+      <option selected></option>
+      <option value="3">Alto</option>
+      <option value="1">Bajo</option>
+      <option value="2">Medio</option>
+  </select>
+  </div>
+
+  <div class="col-sm-6">
+    <label for="puesto" class="form-label">Nivel de ruido</label>
+    <select class="form-select" aria-label="Default select example">
+        <option selected></option>
+        <option value="3">Alto</option>
+        <option value="1">Bajo</option>
+        <option value="2">Medio</option>
+    </select>
+    </div>
+
+  <div class="col-sm-6">
+    <label for="puesto" class="form-label">Se realizan inspecciones preventivas?</label>
+    <select class="form-select" aria-label="Default select example">
+        <option selected></option>
+        <option value="1">Si</option>
+        <option value="2">No</option>
+    </select>
+  </div>
+
+  <div class="col-sm-6">
+    <label for="sector" class="form-label">Fecha de la ultima inspección</label>
+    <input type="date" class="form-control" id="sector" placeholder="" value="" required>
+    <div class="invalid-feedback">
+    </div>
+</div>
+
+<hr class="my-4">
+  <h4 class="mb-3">Datos del trabajador</h4>
+
+  <div class="col-sm-6">
+    <label for="sector" class="form-label">Fecha de nacimiento</label>
+    <input type="date" class="form-control" id="birth" placeholder="" value="" required>
+    <div class="invalid-feedback">
+    </div>
+</div>
+
+<div class="col-sm-6">
+  <label for="sector" class="form-label">Fecha de ingreso a la organización</label>
+  <input type="date" class="form-control" id="entry" placeholder="" value="" required>
+  <div class="invalid-feedback">
+  </div>
+</div>
+
+<div class="col-sm-6">
+  <label for="puesto" class="form-label">Que tipo de terea realizaba</label>
+  <select class="form-select" aria-label="Default select example">
+      <option selected></option>
+      <option value="1">Ajenas al puesto de trabajo</option>
+      <option value="2">Rutinarias</option>
+      <option value="3">No rutinarias</option>
+      <option value="4">Trasladarse de un lugar a otro dentro</option>
+
+  </select>
+</div>
+
+<div class="col-sm-6">
+  <label for="sector" class="form-label">Tiempo en meses en el puesto de trabajo</label>
+  <input type="number" class="form-control" id="sector" placeholder="" value="" required>
+  <div class="invalid-feedback">
+    Valid last name is required.
+  </div>
+</div>
+
+<div class="col-sm-6">
+  <label for="sector" class="form-label">Tiempo en horas del ingreso al trabajo</label>
+  <input type="number" class="form-control" id="sector" placeholder="" value="" required>
+  <div class="invalid-feedback">
+    Valid last name is required.
+  </div>
+</div>
+
+<div class="col-sm-6">
+  <label for="sector" class="form-label">Fecha de la ultima capacitación recibida</label>
+  <input type="date" class="form-control" id="birth" placeholder="" value="" required>
+  <div class="invalid-feedback">
+  </div>
+</div>
+  
+
+<div class="col-sm-6">
+  <label for="puesto" class="form-label">Tuvo accidentes previos</label>
+  <select class="form-select" aria-label="Default select example">
+      <option selected></option>
+      <option value="1">Si</option>
+      <option value="2">No</option>
+  </select>
+</div>
+
+<div class="col-sm-6">
+  <label for="sector" class="form-label">Fecha del accidente previo</label>
+  <input type="date" class="form-control" id="birth" placeholder="" value="" required>
+  <div class="invalid-feedback">
+  </div>
+</div>
+
+<hr class="my-4">
+  <h4 class="mb-3">Datos de la Maquina</h4>
+
+  <div class="col-sm-6">
+    <label for="sector" class="form-label">Nombre la maquina</label>
+    <input type="text" class="form-control" id="maquina" placeholder="" value="" required>
+    <div class="invalid-feedback">
+      Valid last name is required.
+    </div>
+  </div>
+
+  <div class="col-sm-6">
+    <label for="puesto" class="form-label">Que tipo de energía utiliza</label>
+    <select class="form-select" aria-label="Default select example">
+        <option selected></option>
+        <option value="1">cinética</option>
+        <option value="2">elástica</option>
+        <option value="3">eléctrica</option>
+        <option value="4">hidráulica</option>
+        <option value="5">mecánica</option>
+        <option value="6">nuclear</option>
+        <option value="7">neumáticar</option>
+        <option value="7">química</option>
+        <option value="7">térmica</option>  
+    </select>
+  </div>
+
+  <div class="col-sm-6">
+    <label for="puesto" class="form-label">La maquina presentaba fallas previas</label>
+    <select class="form-select" aria-label="Default select example">
+        <option selected></option>
+        <option value="1">Si</option>
+        <option value="2">No</option>
+    </select>
+  </div>
+
+  <div class="col-sm-6">
+    <label for="puesto" class="form-label">Tiene defensas las partes energizadas</label>
+    <select class="form-select" aria-label="Default select example">
+        <option selected></option>
+        <option value="1">Si</option>
+        <option value="2">No</option>
+    </select>
+  </div>
+
+  <div class="col-sm-6">
+    <label for="puesto" class="form-label">Cual es el estado de las defensas las partes energizadas</label>
+    <select class="form-select" aria-label="Default select example">
+        <option selected></option>
+        <option value="1">Bueno</option>
+        <option value="2">Malo</option>
+    </select>
+  </div>
+
+  <div class="col-sm-6">
+    <label for="puesto" class="form-label">El equipo estaba siendo utilizado para lo que diseño</label>
+    <select class="form-select" aria-label="Default select example">
+        <option selected></option>
+        <option value="1">Si</option>
+        <option value="2">No</option>
+    </select>
+  </div>
+
+  <div class="col-sm-6">
+    <label for="puesto" class="form-label">Tiene posibilidad para bloquear las energias</label>
+    <select class="form-select" aria-label="Default select example">
+        <option selected></option>
+        <option value="1">Si</option>
+        <option value="2">No</option>
+    </select>
+  </div>
+
+  <hr class="my-4">
+    <h4 class="mb-3">Datos de la actividad</h4>
+  
+    <div class="col-sm-6">
+      <label for="puesto" class="form-label">Que esferzo fisico requiere a tera</label>
+      <select class="form-select" aria-label="Default select example">
+          <option selected></option>
+          <option value="1">Alto</option>
+          <option value="2">Medio</option>
+          <option value="3">Bajo</option>
+      </select>
+    </div>
+  
+    <div class="col-sm-6">
+      <label for="puesto" class="form-label">Que nivel de atención requiere a tera</label>
+      <select class="form-select" aria-label="Default select example">
+          <option selected></option>
+          <option value="1">Alto</option>
+          <option value="2">Medio</option>
+          <option value="3">Bajo</option>
+      </select>
+    </div>
+
+    <div class="col-sm-6">
+      <label for="puesto" class="form-label">La terea es repetitiva</label>
+      <select class="form-select" aria-label="Default select example">
+          <option selected></option>
+          <option value="1">Si</option>
+          <option value="2">No</option>
+      </select>
+    </div>
+  
+    <div class="col-sm-6">
+      <label for="puesto" class="form-label">Que nivel de movilidad requiere la tarea</label>
+      <select class="form-select" aria-label="Default select example">
+          <option selected></option>
+          <option value="1">Alto</option>
+          <option value="2">Medio</option>
+          <option value="3">Bajo</option>
+      </select>
+    </div>
+
+    <div class="col-sm-6">
+      <label for="puesto" class="form-label">Que nivel de presición requiere la tarea</label>
+      <select class="form-select" aria-label="Default select example">
+          <option selected></option>
+          <option value="1">Alto</option>
+          <option value="2">Medio</option>
+          <option value="3">Bajo</option>
+      </select>
+    </div>
+
+    <div class="col-sm-6">
+      <label for="puesto" class="form-label">Es una actividad en altura</label>
+      <select class="form-select" aria-label="Default select example">
+          <option selected></option>
+          <option value="1">Si</option>
+          <option value="2">No</option>
+      </select>
+    </div>
+  
+    <div class="col-sm-6">
+      <label for="puesto" class="form-label">Es una actividad en espacio confinado</label>
+      <select class="form-select" aria-label="Default select example">
+          <option selected></option>
+          <option value="1">Si</option>
+          <option value="2">No</option>
+      </select>
+    </div>
+
+    <div class="col-sm-6">
+      <label for="puesto" class="form-label">Requiere bloqueo de energías</label>
+      <select class="form-select" aria-label="Default select example">
+          <option selected></option>
+          <option value="1">Si</option>
+          <option value="2">No</option>
+      </select>
+    </div>
+
+  <hr class="my-4">
+    <h4 class="mb-3">Datos del metodo</h4>
+  
+    <div class="col-sm-6">
+      <label for="puesto" class="form-label">Requiere usos de Elementos de protección personal</label>
+      <select class="form-select" aria-label="Default select example">
+          <option selected></option>
+          <option value="1">Si</option>
+          <option value="2">No</option>
+      </select>
+    </div>
+  
+    <div class="col-sm-6">
+      <label for="puesto" class="form-label">Estaba usando de Elementos de protección personal</label>
+      <select class="form-select" aria-label="Default select example">
+          <option selected></option>
+          <option value="1">Si</option>
+          <option value="2">No</option>
+      </select>
+    </div>
+
+    <div class="col-sm-6">
+      <label for="puesto" class="form-label">La terea requiere autorización previa?</label>
+      <select class="form-select" aria-label="Default select example">
+          <option selected></option>
+          <option value="1">Si</option>
+          <option value="2">No</option>
+      </select>
+    </div>
+  
+    <div class="col-sm-6">
+      <label for="puesto" class="form-label">La persona estaba autorizada?</label>
+      <select class="form-select" aria-label="Default select example">
+          <option selected></option>
+          <option value="1">Si</option>
+          <option value="2">No</option>
+      </select>
+    </div>
+
+    <div class="col-sm-6">
+      <label for="puesto" class="form-label">Existe un procedimiento de trabajo seguro?</label>
+      <select class="form-select" aria-label="Default select example">
+          <option selected></option>
+          <option value="1">Si</option>
+          <option value="2">No</option>
+      </select>
+    </div>
+  
+    <div class="col-sm-6">
+      <label for="puesto" class="form-label">Se aplico el procedimiento de trabajo seguro?</label>
+      <select class="form-select" aria-label="Default select example">
+          <option selected></option>
+          <option value="1">Si</option>
+          <option value="2">No</option>
+      </select>
+    </div>
+
+    <div class="col-sm-6">
+      <label for="puesto" class="form-label">La persona actuo como se espera en el procedimiento?</label>
+      <select class="form-select" aria-label="Default select example">
+          <option selected></option>
+          <option value="1">Si</option>
+          <option value="2">No</option>
+      </select>
+    </div>
+
+  <button class="w-100 btn btn-primary btn-lg" type="submit">Continue to checkout</button>
+
+
+
+</div>
+
+  </form>

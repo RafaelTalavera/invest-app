@@ -1,53 +1,54 @@
+
 <div class="card border-primary mb-3">
     <div class="card-header">Lugar de trabajo</div>
     <div class="card-body text-primary">
-        <h5 class="card-title">Listado de Eventos</h5>
+        <h5 class="card-title">Rama Organizacion</h5>
 
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>eppDetails</th>
-                    <th>eppDesignated </th>
-                    <th>eppUsed</th>
-                    <th>authorizationDetails</th>
-                    <th>authorizationWork</th>
-                    <th>riskDetails</th>
-                    <th>risk</th>
-                    <th>ptsDetails</th>
-                    <th>pts </th>
-                    <th>ptsApplied</th>
-                    <th>changeDetails</th>
-                    <th>change</th>
-                    <th>blockingDetails</th>
-                    <th>blocking</th>
-                    <th>expectedBehaviorDetails</th>
-                    <th>expectedBehavior</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr *ngFor="let event of events">
-               
-                    <td>{{ event.organizacional?.eppDetails }}</td>
-                    <td>{{ event.organizacional?.eppDesignated }}</td>
-                    <td>{{ event.organizacional?.eppUsed }}</td>
-                    <td>{{ event.organizacional?.authorizationDetails }}</td>
-                    <td>{{ event.organizacional?.authorizationWork }}</td>
-                    <td>{{ event.organizacional?.riskDetails }}</td>
-                    <td>{{ event.organizacional?.risk }}</td>
-                    <td>{{ event.organizacional?.ptsDetails }}</td>
-                    <td>{{ event.organizacional?.pts }}</td>
-                    <td>{{ event.organizacional?.ptsApplied }}</td>
-                    <td>{{ event.organizacional?.changeDetails }}</td>
-                    <td>{{ event.organizacional?.change }}</td>
-                    <td>{{ event.organizacional?.blockingDetails }}</td>
-                    <td>{{ event.organizacional?.blocking }}</td>
-                    <td>{{ event.organizacional?.expectedBehaviorDetails }}</td>
-                    <td>{{ event.organizacional?.expectedBehavior }}</td>
-
-                </tr>
-
-            </tbody>
-        </table>
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>eppDetails</th>
+                        <th>eppDesignated </th>
+                        <th>eppUsed</th>
+                        <th>authorizationDetails</th>
+                        <th>authorizationWork</th>
+                        <th>riskDetails</th>
+                        <th>risk</th>
+                        <th>ptsDetails</th>
+                        <th>pts </th>
+                        <th>ptsApplied</th>
+                        <th>changeDetails</th>
+                        <th>change</th>
+                        <th>blockingDetails</th>
+                        <th>blocking</th>
+                        <th>expectedBehaviorDetails</th>
+                        <th>expectedBehavior</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let event of events">
+                        <td>{{ event.organizacional?.eppDetails }}</td>
+                        <td>{{ event.organizacional?.eppDesignated }}</td>
+                        <td>{{ event.organizacional?.eppUsed }}</td>
+                        <td>{{ event.organizacional?.authorizationDetails }}</td>
+                        <td>{{ event.organizacional?.authorizationWork }}</td>
+                        <td>{{ event.organizacional?.riskDetails }}</td>
+                        <td>{{ event.organizacional?.risk }}</td>
+                        <td>{{ event.organizacional?.ptsDetails }}</td>
+                        <td>{{ event.organizacional?.pts }}</td>
+                        <td>{{ event.organizacional?.ptsApplied }}</td>
+                        <td>{{ event.organizacional?.changeDetails }}</td>
+                        <td>{{ event.organizacional?.change }}</td>
+                        <td>{{ event.organizacional?.blockingDetails }}</td>
+                        <td>{{ event.organizacional?.blocking }}</td>
+                        <td>{{ event.organizacional?.expectedBehaviorDetails }}</td>
+                        <td>{{ event.organizacional?.expectedBehavior }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 </div>
+
 

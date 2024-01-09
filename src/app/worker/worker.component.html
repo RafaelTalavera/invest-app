@@ -3,10 +3,10 @@
     <div class="card-body text-primary">
         <h5 class="card-title">Relevemaniento</h5>
 
-        <table class="table">
+        <div class="table-responsive">
+            <table class="table table-bordered">
             <thead>
                 <tr>
-                    <th>fullName</th>
                     <th>birth</th>
                     <th>entry</th>
                     <th>workOccasionDetails</th>
@@ -20,17 +20,20 @@
                     <th>trainingDate</th>
                     <th>physicsCapDetails</th>
                     <th>physicsCap</th>
+                    <th>mentalCapDetails</th>
+                    <th>mentalCap</th>
                     <th>physicalTensionDetails</th>
                     <th>physicalTension</th>
                     <th>mentalTensionDetails</th>
                     <th>mentalTension</th>
+                    <th>accidentHistory</th>
+                    <th>dateAccidentHistory</th>
                
 
                 </tr>
             </thead>
             <tbody>
                 <tr *ngFor="let event of events">
-                    <td>{{ event.worker.fullName }}</td>
                     <td>{{ event.worker.birth }}</td>
                     <td>{{ event.worker.entry }}</td>
                     <td>{{ event.worker.workOccasionDetails }}</td>
@@ -50,8 +53,12 @@
                     <td>{{ event.worker.physicalTension }}</td>
                     <td>{{ event.worker.mentalTensionDetails }}</td>
                     <td>{{ event.worker.mentalTension }}</td>
+                    <td>{{ event.worker.accidentHistory }}</td>
+                    <td>{{ event.worker.dateAccidentHistory }}</td>
+
                 </tr>
             </tbody>
         </table>
+    </div>
     </div>
 </div>

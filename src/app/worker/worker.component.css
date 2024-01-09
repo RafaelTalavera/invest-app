@@ -1,0 +1,4 @@
+.table-bordered td,
+.table-bordered th {
+    font-size: 12px; /* Ajusta el tamaño de la letra según tus preferencias */
+}

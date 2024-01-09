@@ -14,6 +14,7 @@ import { EventsComponent } from './events/events.component';
 import { WorkerComponent } from './worker/worker.component';
 import { OrganizationalComponent } from './organizational/organizational.component';
 import { WorkEquipmentComponent } from './work-equipment/work-equipment.component';
+import { FormEventComponent } from './events/form-event.component';
 
 
 
@@ -24,7 +25,8 @@ const routes: Routes = [
   { path: 'events', component: EventsComponent},
   { path: 'worker', component: WorkerComponent},
   { path: 'organizational', component: OrganizationalComponent},
-  { path: 'workEquiment', component: WorkEquipmentComponent}
+  { path: 'workEquiment', component: WorkEquipmentComponent},
+  { path: 'formEvent', component: FormEventComponent}
 
 ];
 
@@ -39,6 +41,7 @@ const routes: Routes = [
     OrganizationalComponent,
     WorkEquipmentComponent,
     WorkerComponent,
+    FormEventComponent,
 
 
   ],

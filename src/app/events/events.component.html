@@ -3,71 +3,21 @@
     <div class="card-body text-primary">
         <h5 class="card-title">Listado de Eventos</h5>
 
-        <table class="table">
+        <div class="table-responsive">
+            <table class="table table-bordered">
             <thead>
                 <tr>
                     <th>ID</th>
-                    <th>dateEvent</th>
+                    <th>date Event</th>
                     <th>description</th>
                     <th>severity</th>
-                    <th>poSeverity"</th>
-                    <th>bodyPart</th>
+                    <th>po Severity</th>
+                    <th>body Part</th>
                     <th>injury</th>
-                    <th>incidenType</th>
+                    <th>inciden Type</th>
                     <th>imagen</th>
-                    <th>aditionalImagen</th>
-                    <th>fullName</th>
-                    <th>birth</th>
-                    <th>entry</th>
-                    <th>workOccasionDetails</th>
-                    <th>workOccasion</th>
-                    <th>experienceDetails</th>
-                    <th>experience</th>
-                    <th>fatiguedDetails</th>
-                    <th>fatigued</th>
-                    <th>trainingDetails</th>
-                    <th>training</th>
-                    <th>trainingDate</th>
-                    <th>physicsCapDetails</th>
-                    <th>physicsCap</th>
-                    <th>mentalCapDetails</th>
-                    <th>mentalCap</th>
-                    <th>physicalTensionDetails</th>
-                    <th>physicalTension</th>
-                    <th>mentalTensionDetails</th>
-                    <th>mentalTension</th>
-                    <th>name</th>
-                    <th>sector</th>
-                    <th>adverseWeatherDetalis</th>
-                    <th>adverseWeather</th>
-                    <th>lightingDetails</th>
-                    <th>lighting</th>
-                    <th>inspectionDate</th>
-                    <th>eppDetails</th>
-                    <th>eppDesignated</th>
-                    <th>eppUsed</th>
-                    <th>authorizationDetails</th>
-                    <th>authorizationWork</th>
-                    <th>riskDetails</th>
-                    <th>risk</th>
-                    <th>ptsDetails</th>
-                    <th>pts</th>
-                    <th>ptsApplied</th>
-                    <th>changeDetails</th>
-                    <th>change</th>
-                    <th>blockingDetails</th>
-                    <th>blocking</th>
-                    <th>expectedBehaviorDetails</th>
-                    <th>expectedBehavior</th>
-                    <th>name</th>
-                    <th>workEquipmentFailsDetalis</th>
-                    <th>workEquipmentFails</th>
-                    <th>energy</th>
-                    <th>defenseFailedDetails</th>
-                    <th>defenseFailed</th>
-                    <th>correctUseEquimantDetails</th>
-                    <th>correctUseEquimant</th>
-
+                    <th>aditional Imagen</th>
+                    
                 </tr>
             </thead>
             <tbody>
@@ -82,34 +32,12 @@
                     <td>{{ event.incidenType }}</td>
                     <td>{{ event.imagen }}</td>
                     <td>{{ event.aditionalImagen }}</td>
-                    <td>{{ event.organizacional?.eppDetails }}</td>
-                    <td>{{ event.organizacional?.eppDesignated }}</td>
-                    <td>{{ event.organizacional?.eppUsed }}</td>
-                    <td>{{ event.organizacional?.authorizationDetails }}</td>
-                    <td>{{ event.organizacional?.authorizationWork }}</td>
-                    <td>{{ event.organizacional?.riskDetails }}</td>
-                    <td>{{ event.organizacional?.risk }}</td>
-                    <td>{{ event.organizacional?.ptsDetails }}</td>
-                    <td>{{ event.organizacional?.pts }}</td>
-                    <td>{{ event.organizacional?.ptsApplied }}</td>
-                    <td>{{ event.organizacional?.changeDetails }}</td>
-                    <td>{{ event.organizacional?.change }}</td>
-                    <td>{{ event.organizacional?.blockingDetails }}</td>
-                    <td>{{ event.organizacional?.blocking }}</td>
-                    <td>{{ event.organizacional?.expectedBehaviorDetails }}</td>
-                    <td>{{ event.organizacional?.expectedBehavior }}</td>
-                    <td>{{ event.workEquipement.name }}</td>
-                    <td>{{ event.workEquipement.workEquipmentFailsDetalis }}</td>
-                    <td>{{ event.workEquipement.workEquipmentFails }}</td>
-                    <td>{{ event.workEquipement.energy }}</td>
-                    <td>{{ event.workEquipement.defenseFailedDetails }}</td>
-                    <td>{{ event.workEquipement.defenseFailed }}</td>
-                    <td>{{ event.workEquipement.correctUseEquimantDetails }}</td>
-                    <td>{{ event.workEquipement.correctUseEquimant }}</td>
+                    
                 </tr>
 
             </tbody>
         </table>
+    </div>
     </div>
 </div>
 

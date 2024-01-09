@@ -1,87 +1,72 @@
 
     
- // Worker class
 export class Worker {
-    fullName?: string = "ddd";
     birth: string = "";
     entry: string = "";
-    workOccasionDetails: string = "";
-    workOccasion: boolean = false;
-    experienceDetails: string = "";
-    experience: boolean = false;
-    fatiguedDetails: string = "";
-    fatigued: boolean = false;
-    trainingDetails: string = "";
-    training: boolean = false;
+    workOccasion: string = "";
+    experience: number = 0;
+    hoursWorked: number = 0;
     trainingDate: string = "";
-    physicsCapDetails: string = "";
-    physicsCap: string = "";
-    mentalCapDetails: string = "";
-    mentalCap: string = "";
-    physicalTensionDetails: string = "";
-    physicalTension: string = "";
-    mentalTensionDetails: string = "";
-    mentalTension: string = "";
+    accidentHistory: boolean = false;
+    dateAccidentHistory: string = "";
   }
   
-  // WorkPlace class
   export class WorkPlace {
     name: string = "";
     sector: string = "";
-    adverseWeatherDetalis: string = "";
-    adverseWeather: boolean = false;
-    lightingDetails: string = "";
-    lighting: boolean = false;
+    weather: string = "";
+    lighting: string = "";
+    noise: string = "";
     inspectionDate: string = "";
     inspection: boolean = false;
   }
   
-  // Organizational class
-  export class Organizational {
-    eppDetails: string = "";
+  export class Method{
     eppDesignated: boolean = false;
-    eppUsed: boolean = false;
-    authorizationDetails: string = "";
+    eppUseds: boolean = false;
+    authorization: boolean = false;
     authorizationWork: boolean = false;
-    riskDetails: string = "";
-    risk: boolean = false;
-    ptsDetails: string = "";
     pts: boolean = false;
     ptsApplied: boolean = false;
-    changeDetails: string = "";
-    change: boolean = false;
-    blockingDetails: string = "";
-    blocking: boolean = false;
-    expectedBehaviorDetails: string = "";
+    risk: boolean = false;
+    ptsDetails: string = "";
     expectedBehavior: boolean = false;
+   
   }
   
-  // WorkEquipment class
   export class WorkEquipment {
     name: string = "";
-    workEquipmentFailsDetalis: string = "";
-    workEquipmentFails: boolean = false;
     energy: string = "";
-    defenseFailedDetails: string = "";
-    defenseFailed: boolean = false;
-    correctUseEquimantDetails: string = "";
-    correctUseEquimant: boolean = false;
+    workEquipmentFails: string = "";
+    defense: boolean = false;
+    defenseIntegrity: string = "";
+    correctUseEquimant: string = "";
+    locked: string = "";
   }
   
-  // Main Events class
+export class activity{
+  strength: string = "";
+  repetition: string = "";
+  mobility: string = "";
+  precision: string = "";
+  height: string = "";
+  confinedSpace: string = "";
+}
+
   export class Events {
     id: string = "";
     dateEvent: string = "";
     description: string = "";
     severity: string = "";
     poSeverity: string = "";
-    bodyPart: any = null;
+    bodyPart: string = "";
     injury: string = "";
     incidenType: string = "";
     imagen: string = "";
     aditionalImagen: string = "";
     worker: Worker = new Worker();
     workPlace: WorkPlace = new WorkPlace();
-    organizacional: Organizational | null = null;
+    organizacional: Method = new Method();
     workEquipement: WorkEquipment = new WorkEquipment();
+    activity: activity = new activity();
   }
